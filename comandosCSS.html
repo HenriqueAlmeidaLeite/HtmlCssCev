@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="pt-br">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Fredericka+the+Great&display=swap'); /*Para importar font family's basta ir no site google fonts e escolher uma delas. Depois disso é só clicar em get font, get embed code e copiar o import e a forma de escrever*/
+
+        body{
+            background-image: radial-gradient(circle,#261433, #442892 70%, rgb(89, 25, 25));
+            color: aliceblue;
+
+            font-family: Arial, Helvetica, sans-serif;  /*Existem dispositivos que não suportam determinadas fontes. Por isso é sempre bom colocar vários tipos de fonte que podem ser usadas em ordem de qual você gosta mais, pois o programa vai tentar a primeira fonte, se não der certo a segunda, a terceira e assim por diante. Sempre termine a lista com sans-serif, pois é um tipo que qualquer dispositivo suporta.*/
+
+            font-size: 10px; /*Sempre que for definir o tamanho da fonte, use px ou em*/
+        }
+        h2{              
+        font-family: "Fredericka the Great", serif;
+        font-weight: 3em;
+        font-style: normal;
+        text-align: justify;
+        text-indent: 15px;
+        }
+
+        h2#um{
+            font-family: 'Times New Roman', Times, serif;
+        }
+
+        h3.dois{
+            background-color:brown;
+        }
+
+        #dois > p{
+            display: none;
+        }
+
+        #dois:hover > p{  /*Esse : e esse > indicam uma pseudo-classe*/
+            display: block;  /*O display altera a característica normal do elemento. Nesse caso, está transformando a div#dois em um bloco*/
+            color: black;
+            background-color: white;
+        }
+        #dois:hover{
+            background-color: yellow;
+        }
+
+        a::after{
+            content: '   [link]';
+        }
+
+        #quatro{
+            background-color: black;
+            height: 300px;
+            width: 300px;
+
+            border-width: 10px;
+            border-style: solid;                  /*Defini o tamanho da borda*/
+            border-color: #9103F8;
+
+            padding-top: 10px;
+            padding-right: 10px;                   /*Defini o tamanho do preenchimento(espaço entre a s*/
+            padding-bottom: 10px;                 
+            padding-bottom: 10px;                 
+            padding-left: 10px;
+
+            margin-top: 20px;
+            margin-bottom: 20px;                   /*Defini uma distância entre a borda da div e a lateral do bloco*/
+            margin-left: 20px;           
+            margin-right: 20px;
+
+            outline-width: 5px;
+            outline-style: dashed;                 /*Defini a estilização que vai do lado de fora da borda*/
+            outline-color:cornsilk;
+
+            
+        }
+
+        span#texto1{   /*span é uma caixa inline-level, enquanto div é uma caixa box-level*/
+            border-width: 10px;
+            border-style: solid;
+            border-color: white;
+
+            padding-top: 10px;
+            padding-right: 10px;
+            padding-bottom: 10px;
+            padding-left: 10px;
+        }
+
+        #cinco{
+            background-color:#FF0643;
+            box-shadow: 5px 5px 5px greenyellow;  /*cria uma sombra na sua caixa. O primeiro parametro defini o tamanho horizontal, o segundo o vertical, o terceiro o clareamento e a quarta a cor. Colocar valores negativos no primeiro e segundo parâmetro faz eles irem para a esquerda e para cima, respectivamente.*/
+        }
+
+        #seis{
+            height: 100px;
+            width: 100px;
+            background-color: white;
+            border-radius: 50%;
+            text-align: center;
+            color: black;
+        }
+    </style>
+</head>
+<body>
+
+
+
+    <h1>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Laboriosam maxime molestias inventore, tempora soluta corrupti! Eum commodi porro a officia ipsam, pariatur sint, aliquid corporis, quibusdam suscipit optio voluptates ex?e</h1>
+
+    <h2>Lorem ipsum dolor sit amet consectetur adipisicing elit. Iste eaque deleniti aperiam asperiores officia perspiciatis neque repellendus consequatur ipsa consequuntur! Quam maxime reiciendis itaque debitis officia voluptatum quos tempora laboriosam.</h2>
+
+    <h2 id="um">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Hic perspiciatis ducimus nostrum et explicabo quisquam expedita ipsam sequi officia natus blanditiis dolorum iusto qui vitae repudiandae quo, laborum sed dolore?</h2>
+
+    <div>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Dolores, maiores accusamus quis fugit dicta, iste quisquam deserunt nisi rem tempore rerum sit voluptates culpa asperiores excepturi ipsum dolore eaque dolor!
+        <p>KKKKKKKKKKKKKKKKKK</p>
+    </div>
+   
+    
+
+
+    <h3 class="dois">Usando classes 1</h3>
+
+    <h3 class="dois">Usando classes 2</h3>
+
+
+
+
+    <div>
+        <br><br><br><br>
+        <p><a href="https://www.youtube.com/playlist?list=PLJ_KhUnlXUPtbtLwaxxUxHqvcNQndmI4B" target="blank" style="color: rgb(37, 186, 37);">Curso de NodeJS</a></p>
+    </div>
+
+     <!--Você só deve usar o id em uma única section, enquanto a classe você pode usar em vários.
+        Você também pode digitar apenas # ou . dentro do style, sem digitar o tipo de div.
+
+             HTML     id = #  CSS
+             HTML  class = .  CSS   
+            pseudo-class = :
+         pseudo-elemenet = ::
+                children = >
+                
+    -->
+    
+
+
+
+    <br><br>
+    <div id="quatro">
+        <p>Exemplo de Box-level</p>
+    </div>
+
+
+
+
+    <br><br>
+    <div>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. <span id="texto1">Exemplo de inline-level</span>Distinctio ipsum, nam velit quibusdam fuga quia hic, nobis alias suscipit soluta sed maiores dicta temporibus voluptate pariatur. Expedita eos assumenda quis. </p>
+    </div>
+
+
+
+
+    <div>
+        <div id="cinco">
+            <p>
+                Testando como faz pra por uma div dentro da outra
+            </p>
+        </div>
+    </div>
+
+
+
+    <!--Tags semânticas-->
+
+    <header>  <!--Define o cabeçalho da página ou de uma seção específica. Geralmente contém elementos como logotipo, navegação e outras informações introdutórias.-->
+        <nav> <!--Define os links que serão postos em seu site-->
+
+        </nav>
+    </header>
+
+    <main> <!--Define o conteúdo principal da página, excluindo cabeçalhos, rodapés e barras laterais.-->
+        <article> <!--Define um conteúdo independente e autocontido, como um post de blog, um artigo de jornal, uma entrada de fórum, etc.-->
+
+        </article>
+    </main>
+
+    <section> <!--Define uma seção genérica de conteúdo em uma página, como capítulos, cabeçalhos, rodapés ou qualquer outra área de conteúdo relacionado.-->
+    </section>
+
+    <aside> <!--Define um conteúdo relacionado ao conteúdo principal, mas que pode ser considerado secundário ou tangencial.-->
+
+    </aside>
+
+    <footer> <!--Define o rodapé da página ou de uma seção específica. Geralmente contém informações de copyright, links de contato e outras informações de fim de página.-->
+    </footer>
+
+
+
+    <div id="seis">
+        bola
+    </div>
+</body>
+</html>
