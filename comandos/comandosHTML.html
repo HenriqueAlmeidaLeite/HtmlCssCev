@@ -1,14 +1,23 @@
 <!DOCTYPE html>
 <html lang="pt-br"> <!--Como mudar a linguagem do site, para o google tradutor decidir quando traduzir ou não-->
 <head>
-    <meta charset="UTF-8">
+    <meta charset2="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Olá, mundo</title> <!--Como por um título no cabeçalho do site -->
+    <title>Comandos HTML</title> <!--Como por um título no cabeçalho do site -->
     <link rel="shortcut icon" href="imagens/imagem 3 html5.png" type="image/x-icon"> <!--Como por um ícone no cabeçalho do site--> 
     <style>
         mark{
             background-color: bisque; /*Como mudar a cor de todos os marca-textos, pois a cor padrão é amarelo*/
         }
+        #quadrado{
+            display: inline-block;
+            border: 2px solid black;
+            border-radius: 10px;
+            width: 300px;
+            height: 300px;
+            background-image: url(/imagens/pattern003.png);
+        }
+
     </style>
 </head>
 <body>
@@ -18,12 +27,21 @@
 
     <h1>SALVAMENTO DE COMANDOS DE HTML</h1>
 
+
+
+
     <h2>Imagens</h2>
-    <img src="imagens/imagem 3 css3.png" alt="Logo css 3">
+
+    <img src="../imagens/imagem 3 css3.png" alt="Logo css 3">
+    
     <p>Para usar uma imagem que está dentro de uma pasta no seu arquivo, basta digitar /nomeDaPasta </p>
-    <img src="imagens/imagem 3 html5.png" alt="Logo html 5">
+    <img src="../imagens/imagem 3 html5.png" alt="Logo html 5">
+    
     <p>Para usar uma imagem sem baixá-la no seu computador, basta clicar com o botão direito do mouse em cima dela e clicarem Copy link address e por o link da imagem em src</p>
     <img src="https://miro.medium.com/v2/resize:fit:828/format:webp/1*hcws3Wa6u9IqaEZ_4X04uw.jpeg" alt="">
+
+    <p>Por imagens pelo CSS</p>
+    <div id="quadrado"></div>
 
 
 
@@ -267,7 +285,7 @@ como
     <h2>Adicionar vídeos</h2>
 
     <p>Vídeos hospedados no site</p>
-    <video src="imagens/video 1.mp4" controls width="500" autoplay loop></video>
+    <video src="../imagens/video 1.mp4" controls width="500" autoplay loop></video>
     <!--Nos videos também usa-se a Tag source:src para fazer testes de tipo de vídeo que o navegador suporta-->
 
     <p>Vídeos incorporados de fontes externas</p>
@@ -314,5 +332,7 @@ como
     <p style="background-color: hsl(33, 53%, 43%);">Cores representadas por HSL</p>
     <p style="background-color: rgba(94, 129, 182, 0.31);">Cores representadas por RGBA</p>
     <!--Para escolher o tipo de cor, basta escolher uma cor padrâo e por o mouse em cima. Depois disso, para mudar o tipo de representação é só clicar na barra superior de cores. Para mudar a claridade da cor (o "a" no final da sigla de representação) é necessário mecher na barra lateral -->
+
+
 </body>
 </html>
